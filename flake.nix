@@ -26,6 +26,8 @@
             "openssl"
             "rust-analyzer"
             "trash"
+            "lazydocker"
+            "rainfrog"
           ];
           casks = [
             "nikitabobko/tap/aerospace"
@@ -40,7 +42,6 @@
       environment.systemPackages =
         [ pkgs.neovim
           pkgs.discord
-          pkgs.arc-browser
           pkgs.raycast
           pkgs.brave
           pkgs.tree
@@ -62,7 +63,6 @@
           pkgs.ripgrep
           pkgs.eza
           pkgs.zoxide
-          pkgs.zed-editor
           # pkgs.starship
           pkgs.pass
           pkgs.podman
@@ -72,18 +72,24 @@
           pkgs.ffmpeg
           pkgs.inetutils
           pkgs.socat
+          pkgs.kew
           # pkgs.pywal16
           pkgs.glow
           pkgs.gnupg
           pkgs.direnv
+          pkgs.docker
 
           pkgs.awscli2
           pkgs.cloudflared
 
           pkgs.nodePackages.npm
+          pkgs.nodePackages.aws-cdk
+          pkgs.bun
+          pkgs.codex
           pkgs.go
           pkgs.zig
           pkgs.uv
+          pkgs.terraform
 
           pkgs.cmake
           pkgs.glfw
@@ -94,7 +100,6 @@
 
           pkgs.scrcpy
           pkgs.ruff
-          pkgs.warp-terminal
 
           pkgs.xh
           pkgs.hyperfine
@@ -134,7 +139,6 @@
         dock.autohide = true;
                     dock.persistent-apps = [
                         "${pkgs.kitty}/Applications/Kitty.app"
-                        "${pkgs.arc-browser}/Applications/Arc.app"
                         "Applications/Legcord.app"
                     ];
         finder.FXPreferredViewStyle = "clmv";
