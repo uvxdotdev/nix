@@ -28,10 +28,15 @@
             "trash"
             "lazydocker"
             "rainfrog"
+            "pnpm"
+            "tylerbrock/saw/saw"
+            "scrcpy"
+            "opencode"
           ];
           casks = [
             "nikitabobko/tap/aerospace"
             "jandedobbeleer/oh-my-posh/oh-my-posh"
+            "android-platform-tools"
             "ghostty"
             "legcord"
           ];
@@ -43,7 +48,6 @@
         [ pkgs.neovim
           pkgs.discord
           pkgs.raycast
-          pkgs.brave
           pkgs.tree
           pkgs.fastfetch
           pkgs.yazi
@@ -60,10 +64,11 @@
           pkgs.fzf
           pkgs.jq
           pkgs.fd
+          pkgs.sd
           pkgs.ripgrep
           pkgs.eza
           pkgs.zoxide
-          # pkgs.starship
+          pkgs.starship
           pkgs.pass
           pkgs.podman
           pkgs.podman-compose
@@ -80,10 +85,10 @@
           pkgs.docker
 
           pkgs.awscli2
+          pkgs.aws-sam-cli
           pkgs.cloudflared
 
           pkgs.nodePackages.npm
-          pkgs.nodePackages.aws-cdk
           pkgs.bun
           pkgs.codex
           pkgs.go
@@ -98,7 +103,6 @@
           pkgs.pkg-config
           pkgs.qemu
 
-          pkgs.scrcpy
           pkgs.ruff
 
           pkgs.xh
@@ -107,6 +111,12 @@
           pkgs.just
           pkgs.presenterm
           pkgs.tmux-sessionizer
+
+          pkgs.valkey
+          pkgs.wabt
+          pkgs.jdk
+
+          pkgs.presenterm
 
         ];
 
